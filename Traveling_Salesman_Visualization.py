@@ -147,8 +147,8 @@ def draw_map(data,tourDist):
         x,y = m(get_long(data, i), get_lat(data, i))
         typeColor = 'ro' if i == start or i == end else 'bo'
 
-        lat1, lon1 = get_lat(data, i)    , get_long(data, i)
-        lat2, lon2 = get_lat(data, i - 1), get_long(data, i -  1)
+        lat1, lon1 = get_lat(data,     i) , get_long(data,     i)
+        lat2, lon2 = get_lat(data, i - 1) , get_long(data, i - 1)
         m.drawgreatcircle(lon1, lat1, lon2, lat2, lw=2, color='b')
 
         textColor = "w"
