@@ -1,0 +1,3 @@
+#Graph Interface
+
+def graph_new():
