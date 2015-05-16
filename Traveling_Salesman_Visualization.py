@@ -33,7 +33,7 @@ def populate_data():
         cityList = f.read().splitlines()
     except IOError:
         IOErrMsg = "Make sure 'Cities.txt' is in the same directory as \
-'Traveling_Salesman_Visualization.py.' \n"
+'Traveling_Salesman_Visualization.py'. \n"
         raise Exception(IOErrMsg)
 
     graphSize = len(cityList)
