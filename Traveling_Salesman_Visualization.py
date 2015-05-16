@@ -42,7 +42,11 @@ def populate_data():
     locList = dict()
     for k in xrange(len(cityList)):
         cityName = cityList[k]
-        locList[cityName] = geoloc.geocode(cityName)
+        try:
+            locList[cityName] = geoloc.geocode(cityName)
+        except:
+            print "Error: '%s' is an invalid location name."
+            raise
 
     for i in xrange(graphSize):
         for j in xrange(i, graphSize):
