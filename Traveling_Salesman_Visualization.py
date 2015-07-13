@@ -154,7 +154,7 @@ def draw_map(data,tourDist):
         textColor = "w"
         name = get_loc(data, i)
         plt.text(x + 40000, y - 200000, name, weight= "bold", color= textColor)
-        m.plot(x , y, typeColor, markersize= 10)
+        m.plot(x, y, typeColor, markersize= 10)
 
     plt.title("Starting from %s via %d waypoints | \
 Total Distance: %d miles" % (get_loc(data, start), end - 1, tourDist))
